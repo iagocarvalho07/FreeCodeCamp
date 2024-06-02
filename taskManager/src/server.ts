@@ -8,7 +8,7 @@ import mainRouter from './routers/index';
 dotenv.config();
 const server = Express();
 
-server.set("view engine", "mustacheExpress");
+server.set("view engine", "mustache");
 server.set('views', path.join(__dirname, "views"))
 server.engine("mustache", mustacheExpress());
 server.use(Express.static(path.join(__dirname, '../public')));
